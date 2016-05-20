@@ -1,4 +1,5 @@
 [
+    //Default.
     { "keys": ["alt+shift+up"], "command": "select_lines", "args": {"forward": false} },
     { "keys": ["alt+shift+down"], "command": "select_lines", "args": {"forward": true} },
     { "keys": ["ctrl+up"], "command": "scroll_lines", "args": {"amount": 1.0 } },
@@ -13,16 +14,109 @@
     { "keys": ["ctrl+v"], "command": "paste_and_indent" },
     { "keys": ["ctrl+shift+v"], "command": "paste" },
     {
-        "keys": ["alt+shift+6"],
+        "keys": ["ctrl+alt+1"],
+        "command": "set_layout",
+        "args": {
+            "cols": [0.0, 1.0],
+            "rows": [0.0, 1.0],
+            "cells": [[0, 0, 1, 1]],
+        },
+    },
+    {
+        "keys": ["ctrl+alt+2"],
+        "command": "set_layout",
+        "args": {
+            "cols": [0.0, 0.5, 1.0],
+            "rows": [0.0, 1.0],
+            "cells": [[0, 0, 1, 1], [1, 0, 2, 1]],
+        },
+    },
+    {
+        "keys": ["ctrl+alt+3"],
+        "command": "set_layout",
+        "args": {
+            "cols": [0.0, 0.33, 0.66, 1.0],
+            "rows": [0.0, 1.0],
+            "cells": [[0, 0, 1, 1], [1, 0, 2, 1], [2, 0, 3, 1]],
+        },
+    },
+    {
+        "keys": ["ctrl+alt+4"],
+        "command": "set_layout",
+        "args": {
+            "cols": [0.0, 0.25, 0.5, 0.75, 1.0],
+            "rows": [0.0, 1.0],
+            "cells": [[0, 0, 1, 1], [1, 0, 2, 1], [2, 0, 3, 1], [3, 0, 4, 1]],
+        },
+    },
+    {
+        "keys": ["ctrl+alt+5"],
+        "command": "set_layout",
+        "args": {
+            "cols": [0.0, 0.5, 1.0],
+            "rows": [0.0, 0.5, 1.0],
+            "cells": [
+                [0, 0, 1, 1], [1, 0, 2, 1],
+                [0, 1, 1, 2], [1, 1, 2, 2],
+            ],
+        },
+    },
+    {
+        "keys": ["ctrl+alt+6"],
         "command": "set_layout",
         "args": {
             "cols": [0.0, 0.7025, 1.0],
             "rows": [0.0, 1.0],
             "cells": [[0, 0, 1, 1], [1, 0, 2, 1]],
-        }
+        },
     },
+    {
+        "keys": ["ctrl+alt+8"],
+        "command": "set_layout",
+        "args": {
+            "cols": [0.0, 1.0],
+            "rows": [0.0, 0.5, 1.0],
+            "cells": [[0, 0, 1, 1], [0, 1, 1, 2]],
+        },
+    },
+    {
+        "keys": ["ctrl+alt+9"],
+        "command": "set_layout",
+        "args": {
+            "cols": [0.0, 1.0],
+            "rows": [0.0, 0.33, 0.66, 1.0],
+            "cells": [[0, 0, 1, 1], [0, 1, 1, 2], [0, 2, 1, 3]],
+        },
+    },
+
+    //D Completion Daemon.
     { "keys": ["ctrl+shift+g"], "command": "dcd_goto_definition" },
     { "keys": ["ctrl+\\"], "command": "dcd_show_documentation" },
+
+    //Style Token.
+    { "keys": ["ctrl+shift+1"], "command": "token_style", "args": { "style_index": 3 } },
+    { "keys": ["ctrl+shift+2"], "command": "token_style", "args": { "style_index": 0 } },
+    { "keys": ["ctrl+shift+3"], "command": "token_style", "args": { "style_index": 2 } },
+    { "keys": ["ctrl+shift+4"], "command": "token_style", "args": { "style_index": 4 } },
+    { "keys": ["ctrl+shift+5"], "command": "token_style", "args": { "style_index": 1 } },
+    { "keys": ["ctrl+alt+shift+1"], "command": "token_style_clear", "args": { "style_index": 3 } },
+    { "keys": ["ctrl+alt+shift+2"], "command": "token_style_clear", "args": { "style_index": 0 } },
+    { "keys": ["ctrl+alt+shift+3"], "command": "token_style_clear", "args": { "style_index": 2 } },
+    { "keys": ["ctrl+alt+shift+4"], "command": "token_style_clear", "args": { "style_index": 4 } },
+    { "keys": ["ctrl+alt+shift+5"], "command": "token_style_clear", "args": { "style_index": 1 } },
+    { "keys": ["alt+1"], "command": "token_style_go", "args": { "style_index": 3 } },
+    { "keys": ["alt+2"], "command": "token_style_go", "args": { "style_index": 0 } },
+    { "keys": ["alt+3"], "command": "token_style_go", "args": { "style_index": 2 } },
+    { "keys": ["alt+4"], "command": "token_style_go", "args": { "style_index": 4 } },
+    { "keys": ["alt+5"], "command": "token_style_go", "args": { "style_index": 1 } },
+    { "keys": ["alt+shift+1"], "command": "token_style_go_back", "args": { "style_index": 3 } },
+    { "keys": ["alt+shift+2"], "command": "token_style_go_back", "args": { "style_index": 0 } },
+    { "keys": ["alt+shift+3"], "command": "token_style_go_back", "args": { "style_index": 2 } },
+    { "keys": ["alt+shift+4"], "command": "token_style_go_back", "args": { "style_index": 4 } },
+    { "keys": ["alt+shift+5"], "command": "token_style_go_back", "args": { "style_index": 1 } },
+    { "keys": ["alt+\\"], "command": "token_style_go" },
+    { "keys": ["alt+shift+\\"], "command": "token_style_go_back" },
+
     //Cyrillic (don't work otherwise in Russian layout).
     { "keys": ["ctrl+ч"], "command": "cut" },
     { "keys": ["ctrl+с"], "command": "copy" },
