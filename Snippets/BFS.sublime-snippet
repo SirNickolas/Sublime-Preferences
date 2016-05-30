@@ -1,0 +1,12 @@
+<snippet>
+	<description>BFS</description>
+	<content><![CDATA[deque<${1:State}> q;
+q.clear();
+q.push_back(${1/\s*(.*\S)\s*/\1/}(${2:y, x}));
+do {
+	$3${2/(\w+)|./?1\1 = q[0].\1;\n\t/g}q.pop_front();
+	$0
+} while (!q.empty());]]></content>
+	<tabTrigger>bfs</tabTrigger>
+	<scope>source.c++, source.objc++</scope>
+</snippet>

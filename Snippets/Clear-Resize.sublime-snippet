@@ -1,0 +1,7 @@
+<snippet>
+	<description>Clear &amp; Resize</description>
+	<content><![CDATA[${1:v}.clear();
+$1.resize(${2:n});]]></content>
+	<tabTrigger>clri</tabTrigger>
+	<scope>source.c++, source.objc++</scope>
+</snippet>

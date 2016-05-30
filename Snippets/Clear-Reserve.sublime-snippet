@@ -1,0 +1,7 @@
+<snippet>
+	<description>Clear &amp; Reserve</description>
+	<content><![CDATA[${1:v}.clear();
+$1.reserve(${2:n});]]></content>
+	<tabTrigger>clre</tabTrigger>
+	<scope>source.c++, source.objc++</scope>
+</snippet>

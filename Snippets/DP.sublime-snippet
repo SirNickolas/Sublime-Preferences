@@ -1,0 +1,15 @@
+<snippet>
+	<description>Dynamic Programming</description>
+	<content><![CDATA[${1:int} dp${2:[100]};
+
+$1 dyn(${3:int pos}) {
+	if (${4:pos == n})
+		return ${5:1};
+	if (~dp${3/(\w+)\s*(?!\s|\w|[&*<>(])|./?1[\1]/g})
+		return dp${3/(\w+)\s*(?!\s|\w|[&*<>(])|./?1[\1]/g};
+	$1 result = ${0:0};
+	return (dp${3/(\w+)\s*(?!\s|\w|[&*<>(])|./?1[\1]/g} = result);
+}]]></content>
+	<tabTrigger>dp</tabTrigger>
+	<scope>source.c, source.objc, source.c++, source.objc++</scope>
+</snippet>

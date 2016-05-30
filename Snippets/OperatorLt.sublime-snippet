@@ -1,0 +1,8 @@
+<snippet>
+	<description>operator&lt;</description>
+	<content><![CDATA[bool operator<(const ${1:thistype}& rhs) const {
+	return $3${2:value} < $3${2/(?:this\s*->\s*)?((?:\w|\.|->)+\s*)(?!\s|\w|[(.]|->)/rhs.\1/g};
+}]]></content>
+	<tabTrigger>oplt</tabTrigger>
+	<scope>source.c++, source.objc++</scope>
+</snippet>
