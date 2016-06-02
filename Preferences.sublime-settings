@@ -1,5 +1,20 @@
 {
     "atomic_save": true,
+    "auto_complete_triggers": [
+        {
+            "selector": "source",
+            "characters": ".",
+        }, {
+            "selector": "source.c++",
+            "characters": ".:>",
+        }, {
+            "selector": "source.coffee, source.litcoffee, source.coffee.md",
+            "characters": ".@",
+        }, {
+            "selector": "text.html",
+            "characters": "<",
+        },
+    ],
     "auto_find_in_selection": true,
     "copy_with_empty_selection": false,
     "drag_text": false,
