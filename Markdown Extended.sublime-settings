@@ -1,0 +1,4 @@
+{
+    "extensions": ["md", "mdown"],
+    "tab_size": 2,
+}
