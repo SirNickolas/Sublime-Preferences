@@ -1,3 +1,4 @@
 {
+    "extensions": ["json", "css.map"],
     "word_wrap": true,
 }

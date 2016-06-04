@@ -2,13 +2,13 @@
     "atomic_save": true,
     "auto_complete_triggers": [
         {
-            "selector": "source",
+            "selector": "source - (comment, string.quoted, string.regexp)",
             "characters": ".",
         }, {
-            "selector": "source.c++",
+            "selector": "source.c++ - (comment, string.quoted, string.regexp)",
             "characters": ".:>",
         }, {
-            "selector": "source.coffee, source.litcoffee, source.coffee.md",
+            "selector": "(source.coffee, source.litcoffee, source.coffee.md) - (comment, string.quoted, string.regexp)",
             "characters": ".@",
         }, {
             "selector": "text.html",
@@ -29,6 +29,8 @@
         "waf3-?.*-*",
         "waf-?.*-*",
         "__pycache__",
+        ".cached_templates",//Mako
+        ".sass-cache",
         "CVS",
     ],
     "overlay_scroll_bars": true,
