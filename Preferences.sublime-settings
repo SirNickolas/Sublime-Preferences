@@ -5,6 +5,9 @@
             "selector": "source - (comment, string.quoted, string.regexp)",
             "characters": ".",
         }, {
+            "selector": "source.c - (comment, string.quoted, string.regexp)",
+            "characters": ".>",
+        }, {
             "selector": "source.c++ - (comment, string.quoted, string.regexp)",
             "characters": ".:>",
         }, {
