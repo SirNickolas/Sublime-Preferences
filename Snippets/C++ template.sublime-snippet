@@ -4,6 +4,7 @@
 
 #define fst first
 #define snd second
+#define let const auto
 #define _   << ' ' <<
 
 using namespace std;
