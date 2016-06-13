@@ -2,7 +2,7 @@
     "atomic_save": true,
     "auto_complete_triggers": [
         {
-            "selector": "source - (comment, string.quoted, string.regexp)",
+            "selector": "source - (source.haskell, comment, string.quoted, string.regexp)",
             "characters": ".",
         }, {
             "selector": "source.c - (comment, string.quoted, string.regexp)",
