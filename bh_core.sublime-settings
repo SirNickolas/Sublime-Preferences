@@ -1,0 +1,4 @@
+{
+    "bracket_string_escape_mode": "regex",
+    "search_threshold": 16384,
+}

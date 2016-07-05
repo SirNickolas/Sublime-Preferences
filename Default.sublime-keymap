@@ -23,8 +23,7 @@
             "rows": [0.0, 1.0],
             "cells": [[0, 0, 1, 1]],
         },
-    },
-    {
+    }, {
         "keys": ["ctrl+alt+2"],
         "command": "set_layout",
         "args": {
@@ -32,8 +31,7 @@
             "rows": [0.0, 1.0],
             "cells": [[0, 0, 1, 1], [1, 0, 2, 1]],
         },
-    },
-    {
+    }, {
         "keys": ["ctrl+alt+3"],
         "command": "set_layout",
         "args": {
@@ -41,8 +39,7 @@
             "rows": [0.0, 1.0],
             "cells": [[0, 0, 1, 1], [1, 0, 2, 1], [2, 0, 3, 1]],
         },
-    },
-    {
+    }, {
         "keys": ["ctrl+alt+4"],
         "command": "set_layout",
         "args": {
@@ -50,8 +47,7 @@
             "rows": [0.0, 1.0],
             "cells": [[0, 0, 1, 1], [1, 0, 2, 1], [2, 0, 3, 1], [3, 0, 4, 1]],
         },
-    },
-    {
+    }, {
         "keys": ["ctrl+alt+5"],
         "command": "set_layout",
         "args": {
@@ -62,8 +58,7 @@
                 [0, 1, 1, 2], [1, 1, 2, 2],
             ],
         },
-    },
-    {
+    }, {
         "keys": ["ctrl+alt+6"],
         "command": "set_layout",
         "args": {
@@ -71,8 +66,7 @@
             "rows": [0.0, 1.0],
             "cells": [[0, 0, 1, 1], [1, 0, 2, 1]],
         },
-    },
-    {
+    }, {
         "keys": ["ctrl+alt+8"],
         "command": "set_layout",
         "args": {
@@ -80,8 +74,7 @@
             "rows": [0.0, 0.5, 1.0],
             "cells": [[0, 0, 1, 1], [0, 1, 1, 2]],
         },
-    },
-    {
+    }, {
         "keys": ["ctrl+alt+9"],
         "command": "set_layout",
         "args": {
@@ -109,9 +102,91 @@
     { "keys": ["alt+shift+super+8"], "command": "move_to_group", "args": { "group": 7 } },
     { "keys": ["alt+shift+super+9"], "command": "move_to_group", "args": { "group": 8 } },
 
-    //D Completion Daemon.
-    { "keys": ["ctrl+shift+g"], "command": "dcd_goto_definition" },
-    { "keys": ["ctrl+\\"], "command": "dcd_show_documentation" },
+    //AceJump.
+    { "keys": ["alt+/"], "command": "ace_jump_select" },
+
+    //MultiEditUtils.
+    { "keys": ["ctrl+alt+h"], "command": "preserve_case" },
+    {
+        "keys": ["alt+d"],
+        "command": "selection_fields",
+        "context": [{ "key": "is_selection_field", "operator": "equal", "operand": false }],
+    }, {
+        "keys": ["alt+d"],
+        "command": "selection_fields",
+        "args": { "mode": "smart", "only_other": true },
+        "context": [{ "key": "is_selection_field" }],
+    }, {
+        "keys": ["alt+shift+d"],
+        "command": "selection_fields",
+        "args": { "mode": "add" },
+    }, {
+        "keys": ["ctrl+alt+d"],
+        "command": "selection_fields",
+        "args": { "mode": "subtract" },
+    },
+
+    //ExpandRegion.
+    { "keys": ["ctrl+shift+j"], "command": "expand_region" },
+
+    //Bracket Highlighter.
+    /*{
+        //Select text between brackets.
+        "keys": ["ctrl+shift+m"],
+        "command": "bh_key",
+        "args": {
+            "plugin": {
+                "type": ["round", "square", "curly"],
+                "command": "bh_modules.bracketselect",
+            },
+        },
+    },*/ {
+        //Convert single quote string to double quoted string and vice versa.
+        //Will handle escaping or unescaping quotes within the string.
+        "keys": ["alt+'"],
+        "command": "bh_key",
+        "args": {
+            "lines" : true,
+            "plugin": {
+                "type": ["single_quote", "double_quote", "py_single_quote", "py_double_quote"],
+                "command": "bh_modules.swapquotes",
+            },
+        },
+    }, {
+        //Go to left bracket.
+        "keys": ["ctrl+["],
+        "command": "bh_key",
+        "args": {
+            "no_outside_adj": null,
+            "no_block_mode": null,
+            "lines" : true,
+            "plugin": {
+                "type": ["__all__"],
+                "command": "bh_modules.bracketselect",
+                "args": { "select": "left" },
+            },
+        },
+    }, {
+        //Go to right bracket.
+        "keys": ["ctrl+]"],
+        "command": "bh_key",
+        "args": {
+            "no_outside_adj": null,
+            "no_block_mode": null,
+            "lines" : true,
+            "plugin": {
+                "type": ["__all__"],
+                "command": "bh_modules.bracketselect",
+                "args": { "select": "right" },
+            },
+        },
+    },
+    { "keys": ["ctrl+alt+["], "command": "move", "args": { "by": "words", "forward": false } },
+    { "keys": ["ctrl+alt+]"], "command": "move", "args": { "by": "word_ends", "forward": true } },
+    //{ "keys": ["ctrl+alt+0"], "command": "move_to", "args": { "to": "bol", "extend": false } },
+
+    //Abacus.
+    { "keys": ["ctrl+alt+\\"], "command": "abacus" },
 
     //Style Token.
     { "keys": ["ctrl+1"], "command": "token_style", "args": { "style_index": 3 } },
@@ -136,6 +211,17 @@
     { "keys": ["alt+shift+5"], "command": "token_style_go_back", "args": { "style_index": 1 } },
     { "keys": ["alt+\\"], "command": "token_style_go" },
     { "keys": ["alt+shift+\\"], "command": "token_style_go_back" },
+
+    //D Completion Daemon.
+    {
+        "keys": ["ctrl+shift+g"],
+        "command": "dcd_goto_definition",
+        "context": [{ "key": "selector", "operator": "equal", "operand": "source.d" }],
+    }, {
+        "keys": ["ctrl+\\"],
+        "command": "dcd_show_documentation",
+        "context": [{ "key": "selector", "operator": "equal", "operand": "source.d" }],
+    },
 
     //Cyrillic (don't work otherwise in Russian layout).
     { "keys": ["ctrl+я"], "command": "undo" },

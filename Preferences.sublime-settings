@@ -36,6 +36,7 @@
         ".sass-cache",
         "CVS",
     ],
+    "match_brackets": false,//BracketHighlighter is used instead.
     "overlay_scroll_bars": true,
     "remember_full_screen": true,
     "rulers": [100],
