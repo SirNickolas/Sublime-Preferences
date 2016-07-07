@@ -1,3 +1,4 @@
 {
+    "extensions": [".clang-format", "_clang-format"],
     "tab_size": 2,
 }
