@@ -236,6 +236,17 @@
     //Abacus.
     { "keys": ["ctrl+alt+\\"], "command": "abacus" },
 
+    //Move Tab.
+    {
+        "keys": ["ctrl+alt+home"],
+        "command": "move_tab",
+        "args": { "position": "0" },
+    }, {
+        "keys": ["ctrl+alt+end"],
+        "command": "move_tab",
+        "args": { "position": "999" },
+    },
+
     //Style Token.
     { "keys": ["ctrl+1"], "command": "token_style", "args": { "style_index": 3 } },
     { "keys": ["ctrl+2"], "command": "token_style", "args": { "style_index": 0 } },
