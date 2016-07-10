@@ -105,6 +105,16 @@
     { "keys": ["alt+;"], "command": "run_macro_file", "args": { "file": "res://Packages/Sublime-Preferences/Macros/Place Semicolon.sublime-macro" } },
     { "keys": ["alt+,"], "command": "run_macro_file", "args": { "file": "res://Packages/Sublime-Preferences/Macros/Place Comma.sublime-macro" } },
 
+    //FuzzyFileNav.
+    { "keys": ["ctrl+o"], "command": "fuzzy_start_from_file" },
+    { "keys": ["ctrl+shift+o"], "command": "prompt_open_file" },
+    {
+        "keys": ["ctrl+w"],
+        "command": "insert",
+        "args": { "characters": "../" },
+        "context": [{ "key": "overlay_visible" }],
+    },
+
     //Auto-pair backquotes.
     {
         "keys": ["`"],

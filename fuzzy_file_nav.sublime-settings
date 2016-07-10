@@ -1,0 +1,21 @@
+{
+    "keep_panel_open_exceptions": ["open", "saveas", "mkfile"],
+    "start_from_here_default_action": "project",
+    "add_folder_to_project_relative": true,
+    "bookmarks": [
+        {
+            "name": "Root",
+            "path": { "#multiconf#": [{ "os:linux": "/" }, { "os:osx": "/" }, { "os:windows": "" }] },
+        }, {
+            "name": "Preferences",
+            "path": {
+                "#multiconf#": [
+                    { "os:linux": "~/.config/sublime-text-3/Packages/Sublime-Preferences" },
+                    { "os:osx": "~/Library/Application Support/Sublime Text 3/Packages/Sublime-Preferences" },
+                    //Not sure if it works.
+                    { "os:windows": "%APPDATA%/Sublime Text 3/Packages/Sublime-Preferences" },
+                ],
+            },
+        },
+    ],
+}
