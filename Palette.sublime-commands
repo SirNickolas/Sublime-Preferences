@@ -1,0 +1,4 @@
+[
+    { "caption": "Convert line endings to LF", "command": "set_line_ending", "args": { "type": "unix" } },
+    { "caption": "Convert line endings to CRLF", "command": "set_line_ending", "args": { "type": "windows" } },
+]
