@@ -246,6 +246,9 @@
     //Abacus.
     { "keys": ["ctrl+alt+\\"], "command": "abacus" },
 
+    //Compare Side-by-Side.
+    { "keys": ["ctrl+alt+shift+d"], "command": "sbs_compare" },
+
     //Move Tab.
     {
         "keys": ["ctrl+alt+home"],
