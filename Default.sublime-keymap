@@ -105,16 +105,6 @@
     { "keys": ["alt+;"], "command": "run_macro_file", "args": { "file": "res://Packages/Sublime-Preferences/Macros/Place Semicolon.sublime-macro" } },
     { "keys": ["alt+,"], "command": "run_macro_file", "args": { "file": "res://Packages/Sublime-Preferences/Macros/Place Comma.sublime-macro" } },
 
-    //FuzzyFileNav.
-    { "keys": ["ctrl+o"], "command": "fuzzy_start_from_file" },
-    { "keys": ["ctrl+shift+o"], "command": "prompt_open_file" },
-    {
-        "keys": ["ctrl+w"],
-        "command": "insert",
-        "args": { "characters": "../" },
-        "context": [{ "key": "overlay_visible" }],
-    },
-
     //Auto-pair backquotes.
     {
         "keys": ["`"],
@@ -158,6 +148,16 @@
             { "key": "selector", "operator": "not_equal", "operand": "punctuation.definition.string.begin", "match_all": true },
             { "key": "eol_selector", "operator": "not_equal", "operand": "string.quoted - punctuation.definition.string.end", "match_all": true },
         ],
+    },
+
+    //FuzzyFileNav.
+    { "keys": ["ctrl+o"], "command": "fuzzy_start_from_file" },
+    { "keys": ["ctrl+shift+o"], "command": "prompt_open_file" },
+    {
+        "keys": ["ctrl+w"],
+        "command": "insert",
+        "args": { "characters": "../" },
+        "context": [{ "key": "overlay_visible" }],
     },
 
     //AceJump.
@@ -256,6 +256,16 @@
         "command": "move_tab",
         "args": { "position": "999" },
     },
+
+    //Case Convertion (overrides Incremental Search!).
+    { "keys": ["ctrl+i", "ctrl+i"], "command": "convert_to_camel" },
+    { "keys": ["ctrl+i", "ctrl+p"], "command": "convert_to_snake" },
+    { "keys": ["ctrl+i", "ctrl+shift+p"], "command": "convert_to_pascal" },
+    { "keys": ["ctrl+i", "ctrl+k"], "command": "convert_to_dash" },
+    { "keys": ["ctrl+i", "ctrl+l"], "command": "convert_to_separate_words" },
+    { "keys": ["ctrl+i", "ctrl+/"], "command": "convert_to_slash" },
+    { "keys": ["ctrl+i", "ctrl+\\"], "command": "convert_to_back_slash" },
+    { "keys": ["ctrl+i", "ctrl+."], "command": "convert_to_dot" },
 
     //Style Token.
     { "keys": ["ctrl+1"], "command": "token_style", "args": { "style_index": 3 } },
