@@ -201,7 +201,7 @@
     },*/ {
         //Convert single quote string to double quoted string and vice versa.
         //Will handle escaping or unescaping quotes within the string.
-        "keys": ["alt+'"],
+        "keys": ["ctrl+alt+'"],
         "command": "bh_key",
         "args": {
             "lines" : true,
