@@ -1,0 +1,7 @@
+{
+    "dumper_args": {
+        "default_flow_style": false,
+        "width": 99,
+        "allow_unicode": true,
+    },
+}
