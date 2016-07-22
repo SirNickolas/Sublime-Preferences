@@ -3,17 +3,31 @@
     "auto_complete_commit_on_tab": true,
     "auto_complete_triggers": [
         {
-            "selector": "source - (source.haskell, comment, string.quoted, string.regexp)",
+            "selector": "comment, string.quoted, string.regexp",
+        }, {
+            "selector": "source - (source.dosbatch, source.haskell, source.ini, source.json, source.perl, source.php, source.shell, source.sublime-settings, source.sublimekeymap, source.yaml)",
             "characters": ".",
         }, {
-            "selector": "source.c - (comment, string.quoted, string.regexp)",
+            "selector": "source.c",
             "characters": ".>",
         }, {
-            "selector": "source.c++ - (comment, string.quoted, string.regexp)",
+            "selector": "source.c++",
             "characters": ".:>",
         }, {
-            "selector": "(source.coffee, source.litcoffee, source.coffee.md) - (comment, string.quoted, string.regexp)",
+            "selector": "source.coffee, source.litcoffee, source.coffee.md",
             "characters": ".@",
+        }, {
+            "selector": "source.perl",
+            "characters": "$@%&:>",
+        }, {
+            "selector": "source.ruby",
+            "characters": ".:@",
+        }, {
+            "selector": "source.lua",
+            "characters": ".:",
+        }, {
+            "selector": "source.php",
+            "characters": "$:>",
         }, {
             "selector": "text.html",
             "characters": "<",
@@ -70,4 +84,5 @@
     "show_line_endings": true,
     "show_panel_on_build": false,
     "translate_tabs_to_spaces": true,
+    "wrap_width": 101,
 }
