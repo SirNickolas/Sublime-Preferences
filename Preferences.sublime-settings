@@ -83,7 +83,6 @@
     "shift_tab_unindent": true,
     "show_encoding": true,
     "show_line_endings": true,
-    "show_panel_on_build": false,
     "translate_tabs_to_spaces": true,
-    "wrap_width": 101,
+    "word_wrap": true,
 }
