@@ -35,6 +35,7 @@
     ],
     "auto_complete_with_fields": true,
     "auto_find_in_selection": true,
+    "caret_style": "phase",
     "copy_with_empty_selection": false,
     "drag_text": false,
     "fallback_encoding": "Cyrillic (Windows 1251)",
