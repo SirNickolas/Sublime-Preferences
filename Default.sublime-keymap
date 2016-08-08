@@ -103,8 +103,8 @@
     { "keys": ["ctrl+shift+super+8"], "command": "move_to_group", "args": { "group": 7 } },
     { "keys": ["ctrl+shift+super+9"], "command": "move_to_group", "args": { "group": 8 } },
 
-    { "keys": ["alt+;"], "command": "run_macro_file", "args": { "file": "res://Packages/Sublime-Preferences/Macros/Place Semicolon.sublime-macro" } },
-    { "keys": ["alt+,"], "command": "run_macro_file", "args": { "file": "res://Packages/Sublime-Preferences/Macros/Place Comma.sublime-macro" } },
+    { "keys": ["alt+;"], "command": "run_macro_file", "args": { "file": "res://Packages/SublimePreferences/Macros/Place Semicolon.sublime-macro" } },
+    { "keys": ["alt+,"], "command": "run_macro_file", "args": { "file": "res://Packages/SublimePreferences/Macros/Place Comma.sublime-macro" } },
 
     //Auto-pairing.
     {
@@ -293,6 +293,18 @@
         "keys": ["ctrl+alt+end"],
         "command": "move_tab",
         "args": { "position": "999" },
+    },
+
+    {
+        "keys": ["ctrl+k", "ctrl+shift+d"],
+        "command": "commando",
+        "args": {
+            "commands": [
+                ["commando_exec", { "cmd": ["python3", "$file"] }],
+                //["commando_new_file", { "scratch": true }],
+                "commando_show_panel",
+            ],
+        },
     },
 
     //Case Convertion.
