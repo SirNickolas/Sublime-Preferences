@@ -103,6 +103,7 @@ To use, just clone it somewhere into the `Packages` directory, which can usually
 * [Chmod](https://packagecontrol.io/packages/Chmod) *(Linux / OS X)*
 * [EditorConfig](https://packagecontrol.io/packages/EditorConfig)
 * [HexViewer](https://packagecontrol.io/packages/HexViewer)
+* [StatusBarTime](https://packagecontrol.io/packages/StatusBarTime)
 * [SubNotify](https://packagecontrol.io/packages/SubNotify)
 
 ### Bundle Install ###
