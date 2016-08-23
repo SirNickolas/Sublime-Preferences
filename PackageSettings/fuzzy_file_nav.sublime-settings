@@ -12,8 +12,7 @@
                 "#multiconf#": [
                     { "os:linux": "~/.config/sublime-text-3/Packages/SublimePreferences" },
                     { "os:osx": "~/Library/Application Support/Sublime Text 3/Packages/SublimePreferences" },
-                    //Not sure if it works.
-                    { "os:windows": "%APPDATA%/Sublime Text 3/Packages/SublimePreferences" },
+                    { "os:windows": "~/Application Data/Sublime Text 3/Packages/SublimePreferences" },
                 ],
             },
         },
