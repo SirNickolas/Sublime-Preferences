@@ -2,6 +2,7 @@
     "extensions": [
         ".gitconfig",
         ".hgrc",
+        ".hgeol",
         "Doxyfile",
     ],
 }
