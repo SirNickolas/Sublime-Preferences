@@ -27,7 +27,6 @@ To use, just clone it somewhere into the `Packages` directory, which can usually
 * [MultiEditUtils](https://packagecontrol.io/packages/MultiEditUtils)
 * [MoveTab](https://packagecontrol.io/packages/MoveTab)
 * [PythonTraceback](https://packagecontrol.io/packages/PythonTraceback)
-* [SlideNav](https://packagecontrol.io/packages/SlideNav)
 * [StyleToken](https://packagecontrol.io/packages/StyleToken)
 * [YAML Nav](https://packagecontrol.io/packages/YAML Nav)
 * [WordHighlight](https://packagecontrol.io/packages/WordHighlight)
@@ -46,16 +45,12 @@ To use, just clone it somewhere into the `Packages` directory, which can usually
 #### IDE-like plugins (Code Completion, Build Systems, etc) ####
 
 * [All Autocomplete](https://packagecontrol.io/packages/All Autocomplete)
-* [Better Build System](https://packagecontrol.io/packages/Better Build System)
 * [Build Next](https://packagecontrol.io/packages/Build Next)
 * [CoffeeComplete Plus (Autocompletion)](https://packagecontrol.io/packages/CoffeeComplete Plus (Autocompletion))
-* [Commando](https://packagecontrol.io/packages/Commando)
 * yazd/[DKit](https://github.com/yazd/DKit)
 * [NimLime](https://packagecontrol.io/packages/NimLime)
 * [OmniMarkupPreviewer](https://packagecontrol.io/packages/OmniMarkupPreviewer)
 * [PackageDev](https://packagecontrol.io/packages/PackageDev)
-* [SublimeGDB](https://packagecontrol.io/packages/SublimeGDB)
-* [SublimeREPL](https://packagecontrol.io/packages/SublimeREPL)
 * SirNickolas/[SublimeYcmd](https://github.com/SirNickolas/SublimeYcmd)
 * [TypeShort](https://packagecontrol.io/packages/TypeShort)
 
@@ -118,16 +113,15 @@ To install all packages at once, add these repositories:
 Then use "Advanced Install Package" command:
 
 ```
-Abacus, AceJump, All Autocomplete, ASCII Decorator, Awk, Better Build System, Better CoffeeScript,
-BracketHighlighter, BufferScroll, Build Next, Case Conversion, Chmod, CMakeEditor,
-CoffeeComplete Plus (Autocompletion), Commando, Compare Side-By-Side, Cython+,
-D Programming Language, DiffView, DKit, Dotfiles Syntax Highlighting, EditorConfig,
-Expand Selection to Quotes, Expand Selection to Whitespace, ExpandRegion, FileDiffs,
+Abacus, AceJump, All Autocomplete, ASCII Decorator, Awk, Better CoffeeScript, BracketHighlighter,
+BufferScroll, Build Next, Case Conversion, Chmod, CMakeEditor, CoffeeComplete Plus (Autocompletion),
+Compare Side-By-Side, Cython+, D Programming Language, DiffView, DKit, Dotfiles Syntax Highlighting,
+EditorConfig, Expand Selection to Quotes, Expand Selection to Whitespace, ExpandRegion, FileDiffs,
 Find Yaml Anchor, Fold Python Docstrings, FuzzyFileNav, GAS-x86 (or x64) highlighting scheme,
 Hamlpy, HexViewer, Horizontal Scroll, Indent Respectful Sort, JsFormat, LLVM, MagicPython, Mako,
 Markdown Extended, ModernPerl, Modific, Monokai Extended, MultiEditUtils, MoveTab,
 NASM x86 Assembly, NimLime, Nix, OmniMarkupPreviewer, PackageDev, plist, Pony Language, Pretty YAML,
-PythonTraceback, Random Everything, RichTextFormat, Ruby Slim, Sass, SCSS, SDLang, SlideNav,
-StyleToken, sublime_toml_highlighting, SublimeAutoHotkey, SublimeGDB, SublimeREPL, SublimeYcmd,
-SubNotify, Tomorrow Color Schemes, TrailingSpaces, TypeShort, WordHighlight, YAML Nav
+PythonTraceback, Random Everything, RichTextFormat, Ruby Slim, Sass, SCSS, SDLang, StyleToken,
+sublime_toml_highlighting, SublimeAutoHotkey, SublimeYcmd, SubNotify, Tomorrow Color Schemes,
+TrailingSpaces, TypeShort, WordHighlight, YAML Nav
 ```
