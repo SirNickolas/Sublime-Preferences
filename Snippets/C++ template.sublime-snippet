@@ -24,7 +24,7 @@ struct debug_t {
 		return *this;
 	}
 
-	debug_t& write(const char data[ ], size_t n) {
+	debug_t& write(const char data[ ], streamsize n) {
 #       ifdef LOCAL_DEBUG
 			cout.write(data, n);
 			cout << flush;
