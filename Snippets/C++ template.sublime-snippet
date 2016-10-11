@@ -40,6 +40,71 @@ int main() {
 	cin.tie(NULL);
 	$0
 }]]></content>
+	<!--<content><![CDATA[#include <bits/stdc++.h>//
+
+#define sqr(x)   ((x) * (x))
+#define eq(x, y) (((x) > (y) ? (x) - (y) : (y) - (x)) <= eps)
+#define sz(x)    int((x).size())
+#define all(x)   (x).begin(), (x).end()
+#define rall(x)  (x).rbegin(), (x).rend()
+#define fst      first
+#define snd      second
+#define mp       make_pair
+#define eb       emplace_back
+#define ef       emplace_front
+#define mt       make_tuple
+#define eps      1e-8
+#define inf      int(1e9)
+#define linf     llong(4e18)
+#define let      const auto
+
+#define TIMESTAMP(msg) debug << "[" msg "] Time = " << clock() * 1.0 / CLOCKS_PER_SEC << '\n'
+#define DBG(x) debug << "[" #x "] = " << x << '\n'
+#define DOUT(x) debug << x << '\n'
+#define _ << ' ' <<
+
+using namespace std;
+
+typedef unsigned char       uchar;
+typedef basic_string<uchar> ustring;
+typedef long long           llong;
+typedef unsigned long long  ullong;
+typedef long double         ldouble;
+typedef vector<int>         vi;
+typedef vector<vi>          vvi;
+typedef vector<double>      vd;
+typedef vector<vd>          vvd;
+typedef pair<int, int>      pii;
+
+struct debug_t {
+	template <typename T>
+	debug_t& operator<<(const T& value) {
+#       ifdef LOCAL_DEBUG
+			cout << value << flush;
+#       endif
+		return *this;
+	}
+
+	debug_t& write(const char data[ ], streamsize n) {
+#       ifdef LOCAL_DEBUG
+			cout.write(data, n);
+			cout << flush;
+#       endif
+		return *this;
+	}
+} debug;
+
+
+
+int main() {
+	ios_base::sync_with_stdio(false);
+	cin.tie(nullptr);
+#   ifndef LOCAL_PROJECT
+		freopen("input.txt", "r", stdin);
+		freopen("output.txt", "w", stdout);
+#   endif
+	$0
+}]]></content>-->
 	<tabTrigger>cpt</tabTrigger>
 	<scope>source.c++, source.objc++</scope>
 </snippet>
