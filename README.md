@@ -16,7 +16,7 @@ To use, just clone it somewhere into the `Packages` directory, which can usually
 
 * [AceJump](https://packagecontrol.io/packages/AceJump)
 * [BracketHighlighter](https://packagecontrol.io/packages/BracketHighlighter)
-* [BufferScroll](https://packagecontrol.io/packages/BufferScroll)
+* titoBouzout/[BufferScroll](https://github.com/titoBouzout/BufferScroll)
 * [Expand Selection to Quotes](https://packagecontrol.io/packages/Expand Selection to Quotes)
 * [Expand Selection to Whitespace](https://packagecontrol.io/packages/Expand Selection to Whitespace)
 * [ExpandRegion](https://packagecontrol.io/packages/ExpandRegion)
@@ -24,12 +24,11 @@ To use, just clone it somewhere into the `Packages` directory, which can usually
 * [Fold Python Docstrings](https://packagecontrol.io/packages/Fold Python Docstrings)
 * [FuzzyFileNav](https://packagecontrol.io/packages/FuzzyFileNav)
 * [Horizontal Scroll](https://packagecontrol.io/packages/Horizontal Scroll)
-* [MultiEditUtils](https://packagecontrol.io/packages/MultiEditUtils)
 * [MoveTab](https://packagecontrol.io/packages/MoveTab)
-* [PythonTraceback](https://packagecontrol.io/packages/PythonTraceback)
+* [MultiEditUtils](https://packagecontrol.io/packages/MultiEditUtils)
 * [StyleToken](https://packagecontrol.io/packages/StyleToken)
-* [YAML Nav](https://packagecontrol.io/packages/YAML Nav)
 * [WordHighlight](https://packagecontrol.io/packages/WordHighlight)
+* [YAML Nav](https://packagecontrol.io/packages/YAML Nav)
 
 #### Text Manipulation ####
 
@@ -51,7 +50,7 @@ To use, just clone it somewhere into the `Packages` directory, which can usually
 * [NimLime](https://packagecontrol.io/packages/NimLime)
 * [OmniMarkupPreviewer](https://packagecontrol.io/packages/OmniMarkupPreviewer)
 * [PackageDev](https://packagecontrol.io/packages/PackageDev)
-* SirNickolas/[SublimeYcmd](https://github.com/SirNickolas/SublimeYcmd)
+* SirNickolas/[YcmdCompletion](https://github.com/SirNickolas/YcmdCompletion)
 * [TypeShort](https://packagecontrol.io/packages/TypeShort)
 
 #### Diff and Version Control ####
@@ -65,10 +64,12 @@ To use, just clone it somewhere into the `Packages` directory, which can usually
 
 * [Awk](https://packagecontrol.io/packages/Awk)
 * [Better CoffeeScript](https://packagecontrol.io/packages/Better CoffeeScript)
+* [C Improved](https://packagecontrol.io/packages/C Improved)
 * [CMakeEditor](https://packagecontrol.io/packages/CMakeEditor)
 * [Cython+](https://packagecontrol.io/packages/Cython+)
 * [D Programming Language](https://packagecontrol.io/packages/D Programming Language)
 * [Dotfiles Syntax Highlighting](https://packagecontrol.io/packages/Dotfiles Syntax Highlighting)
+* [fish-shell](https://packagecontrol.io/packages/fish-shell)
 * [GAS-x86 (or x64) highlighting scheme](https://packagecontrol.io/packages/GAS-x86 (or x64) highlighting scheme)
 * [Hamlpy](https://packagecontrol.io/packages/Hamlpy)
 * [LLVM](https://packagecontrol.io/packages/LLVM)
@@ -85,8 +86,10 @@ To use, just clone it somewhere into the `Packages` directory, which can usually
 * [Sass](https://packagecontrol.io/packages/Sass)
 * [SCSS](https://packagecontrol.io/packages/SCSS)
 * [SDLang](https://packagecontrol.io/packages/SDLang)
+* [ShellScriptImproved](https://packagecontrol.io/packages/ShellScriptImproved)
 * ahkscript/[SublimeAutoHotkey](https://github.com/ahkscript/SublimeAutoHotkey)
 * Gakai/[sublime_toml_highlighting](https://github.com/Gakai/sublime_toml_highlighting)
+* [VimL](https://packagecontrol.io/packages/VimL)
 
 #### Color Schemes ####
 
@@ -97,31 +100,44 @@ To use, just clone it somewhere into the `Packages` directory, which can usually
 
 * [Chmod](https://packagecontrol.io/packages/Chmod) *(Linux / OS X)*
 * [EditorConfig](https://packagecontrol.io/packages/EditorConfig)
+* [Focus File in Sidebar](https://packagecontrol.io/packages/Focus File in Sidebar)
 * [HexViewer](https://packagecontrol.io/packages/HexViewer)
 * [StatusBarTime](https://packagecontrol.io/packages/StatusBarTime)
 * [SubNotify](https://packagecontrol.io/packages/SubNotify)
+* [SyncedSidebarBg](https://packagecontrol.io/packages/SyncedSidebarBg)
 
 ### Bundle Install ###
 
 To install all packages at once, add these repositories:
 
-    https://github.com/yazd/DKit
-    https://github.com/ahkscript/SublimeAutoHotkey
-    https://github.com/Gakai/sublime_toml_highlighting
-    https://github.com/SirNickolas/SublimeYcmd
+```js
+"https://github.com/yazd/DKit",
+"https://github.com/ahkscript/SublimeAutoHotkey",
+"https://github.com/Gakai/sublime_toml_highlighting",
+"https://github.com/SirNickolas/SublimeYcmd",
+```
 
 Then use "Advanced Install Package" command:
 
 ```
 Abacus, AceJump, All Autocomplete, ASCII Decorator, Awk, Better CoffeeScript, BracketHighlighter,
-BufferScroll, Build Next, Case Conversion, Chmod, CMakeEditor, CoffeeComplete Plus (Autocompletion),
+Build Next, C Improved, Case Conversion, Chmod, CMakeEditor, CoffeeComplete Plus (Autocompletion),
 Compare Side-By-Side, Cython+, D Programming Language, DiffView, DKit, Dotfiles Syntax Highlighting,
 EditorConfig, Expand Selection to Quotes, Expand Selection to Whitespace, ExpandRegion, FileDiffs,
-Find Yaml Anchor, Fold Python Docstrings, FuzzyFileNav, GAS-x86 (or x64) highlighting scheme,
-Hamlpy, HexViewer, Horizontal Scroll, Indent Respectful Sort, JsFormat, LLVM, MagicPython, Mako,
-Markdown Extended, ModernPerl, Modific, Monokai Extended, MultiEditUtils, MoveTab,
-NASM x86 Assembly, NimLime, Nix, OmniMarkupPreviewer, PackageDev, plist, Pony Language, Pretty YAML,
-PythonTraceback, Random Everything, RichTextFormat, Ruby Slim, Sass, SCSS, SDLang, StyleToken,
-sublime_toml_highlighting, SublimeAutoHotkey, SublimeYcmd, SubNotify, Tomorrow Color Schemes,
-TrailingSpaces, TypeShort, WordHighlight, YAML Nav
+Find Yaml Anchor, fish-shell, Focus File in Sidebar, Fold Python Docstrings, FuzzyFileNav,
+GAS-x86 (or x64) highlighting scheme, Hamlpy, HexViewer, Horizontal Scroll, Indent Respectful Sort,
+JsFormat, LLVM, MagicPython, Mako, Markdown Extended, ModernPerl, Modific, Monokai Extended,
+MoveTab, MultiEditUtils, NASM x86 Assembly, NimLime, Nix, OmniMarkupPreviewer, PackageDev, plist,
+Pony Language, Pretty YAML, Random Everything, RichTextFormat, Ruby Slim, Sass, SCSS, SDLang,
+ShellScriptImproved, StatusBarTime, StyleToken, sublime_toml_highlighting, SublimeAutoHotkey,
+SubNotify, SyncedSidebarBg, Tomorrow Color Schemes, TrailingSpaces, TypeShort, VimL, WordHighlight,
+YAML Nav, YcmdCompletion
 ```
+
+You will be given tons of errors. Just hold `Esc`, go to `Preferences -> Settings`, and remove the
+`ignored_packages` entry. Then downloading begins. Please, be patient.
+
+For some reasons, `BufferScroll` plugin cannot be installed via PackageControl and has to be
+maintained manually:
+
+    git clone git://github.com/titoBouzout/BufferScroll

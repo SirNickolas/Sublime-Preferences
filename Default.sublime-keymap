@@ -12,9 +12,10 @@
     { "keys": ["ctrl+f7"], "command": "sort_lines", "args": { "case_sensitive": true } },
     { "keys": ["ctrl+f4"], "command": "show_panel", "args": { "panel": "output.exec" } },
     { "keys": ["ctrl+q"], "command": "toggle_comment", "args": { "block": false } },
+    { "keys": ["ctrl+shift+q"], "command": "toggle_comment", "args": { "block": true } },
     { "keys": ["ctrl+v"], "command": "paste_and_indent" },
     { "keys": ["ctrl+shift+v"], "command": "paste" },
-    { "keys": ["ctrl+space"], "command": "auto_complete", "args": { "disable_auto_insert": true } },
+    { "keys": ["ctrl+space"], "command": "insert", "args": { "characters": " " } },
     { "keys": ["ctrl+t"], "command": "transpose" },
     {
         "keys": ["ctrl+alt+1"],
@@ -103,6 +104,7 @@
     { "keys": ["ctrl+shift+super+8"], "command": "move_to_group", "args": { "group": 7 } },
     { "keys": ["ctrl+shift+super+9"], "command": "move_to_group", "args": { "group": 8 } },
 
+    { "keys": ["alt+["], "command": "run_macro_file", "args": { "file": "res://Packages/SublimePreferences/Macros/Place Brace.sublime-macro" } },
     { "keys": ["alt+;"], "command": "run_macro_file", "args": { "file": "res://Packages/SublimePreferences/Macros/Place Semicolon.sublime-macro" } },
     { "keys": ["alt+,"], "command": "run_macro_file", "args": { "file": "res://Packages/SublimePreferences/Macros/Place Comma.sublime-macro" } },
 
@@ -354,6 +356,7 @@
 
     //Cyrillic (don't work otherwise in Russian layout).
     { "keys": ["ctrl+я"], "command": "undo" },
+    { "keys": ["ctrl+shift+я"], "command": "redo" },
     { "keys": ["ctrl+ч"], "command": "cut" },
     { "keys": ["ctrl+с"], "command": "copy" },
     { "keys": ["ctrl+л", "ctrl+и"], "command": "toggle_side_bar" },
