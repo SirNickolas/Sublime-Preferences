@@ -39,6 +39,9 @@ int main() {
 	ios_base::sync_with_stdio(false);
 	cin.tie(nullptr);
 	$0
+
+	cout << flush;
+	_Exit(0);
 }]]></content>
 	<!--<content><![CDATA[#include <bits/stdc++.h>//
 
@@ -104,7 +107,10 @@ int main() {
 		freopen("output.txt", "w", stdout);
 #   endif
 	$0
+
+	cout << flush;
+	_Exit(0);
 }]]></content>-->
 	<tabTrigger>cpt</tabTrigger>
-	<scope>source.c++, source.objc++</scope>
+	<scope>source.c++</scope>
 </snippet>
