@@ -1,5 +1,6 @@
 {
-    "extensions": ["md", "mdown"],
     "color_scheme": "Packages/Monokai Extended/Monokai Extended Origin.tmTheme",
+    "draw_indent_guides": false,
+    "extensions": ["md", "mdown"],
     "tab_size": 2,
 }
