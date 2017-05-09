@@ -2,18 +2,19 @@
 	<description>C++ template</description>
 	<content><![CDATA[#include <bits/stdc++.h>//
 
+#pragma GCC optimize "fast-math"
+
 #define fst first
 #define snd second
 #define let const auto
-#define _   << ' ' <<
 
 using namespace std;
 
-typedef unsigned char       uchar;
-typedef basic_string<uchar> ustring;
-typedef long long           llong;
-typedef unsigned long long  ullong;
-typedef long double         ldouble;
+using uchar   = unsigned char;
+using ustring = basic_string<uchar>;
+using llong   = long long;
+using ullong  = unsigned long long;
+using ldouble = long double;
 
 struct debug_t {
 	template <typename T>
@@ -43,7 +44,37 @@ int main() {
 	cout << flush;
 	_Exit(0);
 }]]></content>
-	<!--<content><![CDATA[#include <bits/stdc++.h>//
+	<!--<content><![CDATA[#include <algorithm>
+#include <array>
+#include <bitset>
+#include <cassert>
+#include <cctype>
+#include <climits>
+#include <cmath>
+#include <cstdio>
+#include <cstdlib>
+#include <cstring>
+#include <ctime>
+#include <deque>
+#include <functional>
+#include <iomanip>
+#include <iostream>
+#include <map>
+#include <numeric>
+#include <queue>
+#include <set>
+#include <sstream>
+#include <string>
+#include <tuple>
+#include <unordered_map>
+#include <unordered_set>
+#include <vector>
+
+#ifdef __GNUC__
+#   pragma GCC optimize "fast-math"
+#else
+#   include <conio.h>
+#endif
 
 #define sqr(x)   ((x) * (x))
 #define eq(x, y) (((x) > (y) ? (x) - (y) : (y) - (x)) <= eps)
@@ -61,23 +92,27 @@ int main() {
 #define linf     llong(4e18)
 #define let      const auto
 
-#define TIMESTAMP(msg) debug << "[" msg "] Time = " << clock() * 1.0 / CLOCKS_PER_SEC << '\n'
+#ifdef LOCAL_PROJECT
+#   define TIMESTAMP(msg) debug << "[" msg "] Time = " << clock() / (double)CLOCKS_PER_SEC << '\n'
+#else
+#   define TIMESTAMP(msg) (void)0
+#endif
 #define DBG(x) debug << "[" #x "] = " << x << '\n'
 #define DOUT(x) debug << x << '\n'
 #define _ << ' ' <<
 
 using namespace std;
 
-typedef unsigned char       uchar;
-typedef basic_string<uchar> ustring;
-typedef long long           llong;
-typedef unsigned long long  ullong;
-typedef long double         ldouble;
-typedef vector<int>         vi;
-typedef vector<vi>          vvi;
-typedef vector<double>      vd;
-typedef vector<vd>          vvd;
-typedef pair<int, int>      pii;
+using uchar   = unsigned char;
+using ustring = basic_string<uchar>;
+using llong   = long long;
+using ullong  = unsigned long long;
+using ldouble = long double;
+using vi      = vector<int>;
+using vvi     = vector<vi>;
+using vd      = vector<double>;
+using vvd     = vector<vd>;
+using pii     = pair<int, int>;
 
 struct debug_t {
 	template <typename T>
@@ -102,14 +137,19 @@ struct debug_t {
 int main() {
 	ios_base::sync_with_stdio(false);
 	cin.tie(nullptr);
-#   ifndef LOCAL_PROJECT
+#   ifdef LOCAL_PROJECT
 		freopen("input.txt", "r", stdin);
-		freopen("output.txt", "w", stdout);
 #   endif
+
 	$0
 
+	TIMESTAMP("end");
 	cout << flush;
-	_Exit(0);
+#   ifdef __GNUC__
+		_Exit(0);
+#   else
+		_getch();
+#   endif
 }]]></content>-->
 	<tabTrigger>cpt</tabTrigger>
 	<scope>source.c++</scope>
