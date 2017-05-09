@@ -1,0 +1,9 @@
+[
+    {
+        "command": "move_to",
+        "args": { "to": "eol" },
+    }, {
+        "command": "insert",
+        "args": { "characters": ":\n" },
+    },
+]
