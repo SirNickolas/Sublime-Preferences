@@ -19,7 +19,7 @@ def main():
         for item in doc:
             keys = item.get("keys")
             if keys is not None:
-                new_keys = [re.sub(r"\b[a-z]\b|[][;',.`]", replacer, key) for key in keys]
+                new_keys = [re.sub(r"\+[a-z]\b|\+[][;',.`]", replacer, key) for key in keys]
                 if new_keys != keys:
                     item["keys"] = new_keys
                     new_doc.append(item)
